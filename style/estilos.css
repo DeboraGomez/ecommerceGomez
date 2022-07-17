@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body {
+    background-color: #121212;
+}
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/*********** header ***********/
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+nav {
+    width: 100%;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 8px;
+}
+header ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+/*********** main ***********/
+main {
+    color: white;
+}
+.pictureContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+main h1 {
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 10px;
+}
+main > div > p {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+main > section {
+    text-align: center;
+}
+main section  picture img {
+    border-radius: 0 8px 0 8px;
+    box-shadow: 2px 2px 8px 1px #000;
+    width: 100%;
+}
+.carritoGrilla{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-bottom: 500px;
+}
+
+.foto1Bolsa{
+    width: 80px;
+    height: 120px;
+}
+.foto2Bolsa{
+    width: 80px;
+    height: 120px;
+    flex-direction: column;
+
+}
+.tituloAyuda {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.formulario{
+    padding: 30px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+/*********** footer ***********/
+footer {
+    display: grid;
+    grid-template-areas:
+    "titulof titulof titulof titulof"
+    "tiktok facebook twitter insta"
+    "cookies politica compra boton";
+    font-size: 10px;
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.titulof{
+    grid-area: titulof;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+}
+.tiktok{
+    grid-area: tiktok;
+    text-align: center;
+    padding: 10px;
+}
+.facebook{
+    grid-area: facebook;
+    text-align: center;
+    padding: 10px;
+}
+.twitter{
+    grid-area: twitter;
+    text-align: center;
+    padding: 10px;
+}
+.insta{
+    grid-area: insta;
+    text-align: center;
+    padding: 10px;
+}
+.pinte{
+    grid-area: pinte;
+    text-align: center;
+    padding: 10px;
+}
+.youtube{
+    grid-area: youtube;
+    text-align: center;
+    padding: 10px;
+}
+.cookies{
+    grid-area: cookies;
+    text-align: center;
+    padding: 10px;
+}
+.politica{
+    grid-area: politica;
+    text-align: center;
+    padding: 10px;
+}
+.compra{
+    grid-area: compra;
+    text-align: center;
+    padding: 10px;
+}
+.boton{
+    grid-area: boton;
+    text-align: center;
+    padding: 10px;
+}
+footer span {
+    font-weight: lighter;
+}
+
+/*********** 500 px ***********/
+
+@media screen and (min-width: 500px) {
+header {
+    border-bottom: 1.5px solid #fff;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+}
+header ul a {
+    font-size: 16px;
+}
+.pictureContainer {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    gap: 20px;
+}
+main h1{
+    font-size: 24px;
+}
+main > div > p {
+    font-size: 16px;
+}
+
+footer{
+    font-size: 12px;
+}
+.titulof{
+    font-size: 14px;
+}
+.tituloAyuda {
+    font-size: 18px;
+}
+.formulario{
+    font-size: 16px;
+}
+}
+
+/*********** 768 px ***********/
+@media screen and (min-width: 700px) {
+    header{
+        border-bottom: 3px solid #fff;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    header ul a{
+        font-size: 20px;
+    }
+    .pictureContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer{
+        font-size: 14px;
+    }
+    .titulof{
+        font-size: 16px;
+    }
+    .tituloAyuda {
+        font-size: 20px;
+    }
+    .formulario{
+        font-size: 18px;
+    }
+    }
+
+
+/*********** 1024 px ***********/
+@media screen and (min-width: 1024px) {
+    header{
+        border-bottom: 4px solid #fff;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    header ul a{
+        font-size: 20px;
+    }
+    .pictureContainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    footer{
+        font-size: 16px;
+        padding: 70px;
+    }
+    .titulof{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .tituloAyuda {
+        font-size: 20px;
+    }
+    .formulario{
+        font-size: 18px;
+    }
+    
+}

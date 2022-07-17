@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/estilos.css">
+    <title>Ayuda</title>
+</head>
+<body>
+    <div class="gridContainer"> 
+        <header>
+            <div >
+                <img class="logo"src="../img/logo.png" alt="logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a>
+                    </li>    
+                    <li><a href="remeras.html">Prendas</a>
+                    </li>
+                    <li><a href="accesorios.html">Accesorios</a> 
+                    </li>
+                    <li><a href="ayuda.html">Ayuda</a>
+                    </li>
+                    <li><a href="bolsa.html">Bolsa</a>
+                    </li>
+                </ul>  
+            </nav>
+        </header>
+    
+    <main>
+        <p class="tituloAyuda"> Completa el formulario para recibir ayuda</p>
+
+        <form class="formulario">
+            <label for="nombre_apellido">Nombre y Apellido</label>
+            <input type="text" name="nombre_apellido"/>
+            <br>
+            <label for="edad">Edad</label>
+            <input type="number" name="Edad" /> 
+            <br>
+            <label for="observaciones">Ingrese comentarios</label>
+            <br>
+            <textarea name="observaciones"  ></textarea>
+            <br>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Borrar"/>
+            <br>
+            <div class="radioBtnText">Hombre</div>    
+            <input type="radio" name="sexo" value="hombre" />
+            <div class="radioBtnText">Mujer</div>
+            <input type="radio" name="sexo" value="mujer">
+            <div class="radioBtnText">Otros</div>
+            <input type="radio" name="sexo" value="otros">
+            <br>
+            <label for="Nacionalidad">Nacionalidad</label>
+            <select name="Nacionalidad" >
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+        </form>   
+
+    </main>
+
+
+    <footer>   
+        <span class="titulof"> Suscribite a nuestro newsletter</span>
+        <span class="tiktok">Tik Tok</span> 
+        <span class="facebook">Facebook</span>
+        <span class="twitter">Twitter</span>
+        <span class="insta">Instagram</span>
+        <span class="cookies">Configuración de cookies</span>
+        <span class="politica">Politica de privacidad y cookies</span>
+        <span class="compra">Condiciones de compra</span>
+        <span class="boton">Botón de arrepentimiento</span>
+        
+    </footer>
+</div>
+</body>
+</html>

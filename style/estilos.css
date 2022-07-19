@@ -9,7 +9,7 @@
     font-family: Poppins;
 }
 body {
-    background-color: #121212;
+    background-color: #1f212a;
 }
 .gridContainer {
     display: grid;
@@ -51,7 +51,210 @@ header ul a {
     color: white;
     font-size: 12px;
 }
-
+a:hover{
+    color: #ff9142;
+    border-bottom: 2px solid #ff723a;
+}
+.foto1{
+    position: relative;
+}
+.foto1:hover::after{
+    content:"Buzo Blanco Magic ";
+    color: #fff;
+    background-color: rgb(69, 69, 100,0.6);
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ff9142;
+    position: absolute;
+    top: 85%;
+    left: 2%;
+}
+.foto2{
+    position: relative;
+}
+.foto2:hover::after{
+    content:"Buzo Rojo Misterio";
+    color: #fff;
+    background-color: rgb(69, 69, 100,0.6);
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ff9142;
+    position: absolute;
+    top: 85%;
+    left: 2%
+}
+.foto3{
+    position: relative;
+}
+.foto3:hover::after{
+    content:"Campera Verde Michigan";
+    color: #fff;
+    background-color: rgb(69, 69, 100,0.6);
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ff9142;
+    position: absolute;
+    top: 85%;
+    left: 2%
+}
+.foto4{
+    position: relative;
+}
+.foto4:hover::after{
+    content:"Campera Naranja Marcus";
+    color: #fff;
+    background-color: rgb(69, 69, 100,0.6);
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ff9142;
+    position: absolute;
+    top: 85%;
+    left: 2%
+}
+.foto5{
+    position: relative;
+}
+.foto5:hover::after{
+    content:"Remera Negra Vans";
+    color: #fff;
+    background-color: rgb(69, 69, 100,0.6);
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ff9142;
+    position: absolute;
+    top: 84%;
+    left: 2%
+}
+.foto6{
+    position: relative;
+}
+.foto6:hover::after{
+    content:"Remera Gris Libertines";
+    color: #fff;
+    background-color: rgb(69, 69, 100,0.6);
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ff9142;
+    position: absolute;
+    top: 85%;
+    left: 2%
+}
+.foto7{
+    position: relative;
+}
+.foto7:hover::after{
+    content:"Pantalon Verde Coxon";
+    color: #fff;
+    background-color: rgb(69, 69, 100,0.6);
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ff9142;
+    position: absolute;
+    top: 84%;
+    left: 2%
+}
+.foto8{
+    position: relative;
+}
+.foto8:hover::after{
+    content:"Accesorio Root";
+    color: #fff;
+    background-color: rgb(69, 69, 100,0.6);
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #ff9142;
+    position: absolute;
+    top: 84%;
+    left: 2%
+}
+.fotoPrendas1{
+    position: relative;
+}
+.fotoPrendas1:hover::after{
+    content:"Camisa JDeep $300";
+    color: #ff723a;
+    position: static;
+    top: 84%;
+    left: 2%
+}
+.fotoPrendas2{
+    position: relative;
+}
+.fotoPrendas2:hover::after{
+    content:"Remera Clasica Bowie $500";
+    color: #ff723a;
+    position: static;
+    top: 84%;
+    left: 2%
+}
+.fotoPrendas3{
+    position: relative;
+}
+.fotoPrendas3:hover::after{
+    content:"Remera Verde Sinister $500";
+    color: #ff723a;
+    position: static;
+    top: 84%;
+    left: 2%
+}
+.fotoPrenda4{
+    position: relative;
+}
+.fotoPrendas4:hover::after{
+    content:"Jogger rojo Gipsy $1000";
+    color: #ff723a;
+    position: static;
+    top: 84%;
+    left: 2%
+}
+.fotoPrendas5{
+    position: relative;
+}
+.fotoPrendas5:hover::after{
+    content:"Remera Funny games $200";
+    color: #ff723a;
+    position: static;
+    top: 84%;
+    left: 2%
+}
+.fotoPrendas6{
+    position: relative;
+}
+.fotoPrendas6:hover::after{
+    content:"Jogger Negro Fireside $500";
+    color: #ff723a;
+    position: static;
+    top: 84%;
+    left: 2%
+}
+.fotoPrendas7{
+    position: relative;
+}
+.fotoPrendas7:hover::after{
+    content:"Remera Verde Bonnie $500";
+    color: #ff723a;
+    position: static;
+    top: 84%;
+    left: 2%
+}
+.fotoPrendas8{
+    position: relative;
+}
+.fotoPrendas8:hover::after{
+    content:"Buzo Blanco Placebo $600";
+    color: #ff723a;
+    position: static;
+    top: 84%;
+    left: 2%
+}
 /*********** main ***********/
 main {
     color: white;
@@ -79,8 +282,8 @@ main > section {
     text-align: center;
 }
 main section  picture img {
-    border-radius: 0 8px 0 8px;
-    box-shadow: 2px 2px 8px 1px #000;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px 2px #121212;
     width: 100%;
 }
 .carritoGrilla{

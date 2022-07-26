@@ -4,100 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style/estilos.css">
     <title>Home</title>
 </head>
 <body>
-    
-    <div class="gridContainer"> 
         <header>
+          <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo" class="w-25"></a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HIPSTER</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./sections/products.html">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link active" href="./sections/bag.html">BAG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./sections/sustainability.html">SUSTAINABILITY</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ABOUT US
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> <li><a class="dropdown-item" href="./sections/whoiam.html">Who I am</a></li>
+                          <li><a class="dropdown-item" href="./sections/help.html"> Contact me</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <main class="container-fluid">
             <div >
-                <img class="logo"src="./img/logo.png" alt="logo">
+                <h1 class="p-lg-2">WELCOME</h1>
+                <p>NEW FW22 MENSWEAR COLLECTION</p>
+
+            </div>
+            <div class="video1">
+                <video src="./multimedia/placebo.mp4" autoplay muted loop widht="900" height="700"></video>
             </div>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a>    
-                    </li>    
-                    <li><a href="./sections/remeras.html">Prendas</a>
-                    </li>
-                    <li><a href="./sections/accesorios.html">Accesorios</a> 
-                    </li>
-                    <li><a href="./sections/ayuda.html">Ayuda</a>
-                    </li>
-                    <li><a href="./sections/bolsa.html">Bolsa</a>
-                    </li>
-                </ul>  
-            </nav>
-        </header>
-        <main>
-            <div class="titulo">
-                <h1>Hola, bienvenidos</h1>
-                <p> Encontra las mejores remeras y accesorios </p>
-            </div>
-            <section class="pictureContainer">
-                <picture class="foto1">
-                    <source media="(max-width:500px )" srcset="img/buzoBlanco150.jpg">
-                    <source media="(max-width:700px )" srcset="img/buzoBlanco210.jpg">
-                    <source media="(max-width:1024px )" srcset="img/buzoBlanco270.jpg">
-                    <img src="./img/buzoBlanco.jpg" alt="buzo blanco">
-                </picture>
-                <picture class="foto2">
-                    <source media="(max-width:500px )" srcset="img/buzoRojo150.jpg">
-                    <source media="(max-width:700px )" srcset="img/buzoRojo210.jpg">
-                    <source media="(max-width:1024px )" srcset="img/buzoRojo270.jpg">
-                    <img src="./img/buzoRojo.jpg" alt="buzo rojo">
-                </picture>
-                <picture class="foto3">
-                    <source media="(max-width:500px )" srcset="img/camperaVerde150.jpg">
-                    <source media="(max-width:700px )" srcset="img/camperaVerde210.jpg">
-                    <source media="(max-width:1024px )" srcset="img/camperaVerde270.jpg">
-                    <img src="./img/camperaVerde.jpg" alt="campera Verde">
-                </picture>
-                <picture class="foto4">
-                    <source media="(max-width:500px )" srcset="img/chalecoNaranja150.jpg">
-                    <source media="(max-width:700px )" srcset="img/chalecoNaranja210.jpg">
-                    <source media="(max-width:1024px )" srcset="img/chalecoNaranja270.jpg">
-                    <img src="./img/chalecoNaranja.jpg" alt="chaleco naranja">
-                </picture>
-                <picture class="foto5">
-                    <source media="(max-width:500px )" srcset="img/remeraVans150.jpg">
-                    <source media="(max-width:700px )" srcset="img/remeraVans210.jpg">
-                    <source media="(max-width:1024px )" srcset="img/remeraVans270.jpg">
-                    <img src="./img/remeraVans.jpg" alt="remera vans">
-                </picture>
-                <picture class="foto6">
-                    <source media="(max-width:500px )" srcset="img/tshirtGrey150.png">
-                    <source media="(max-width:700px )" srcset="img/tshirtGrey210.png">
-                    <source media="(max-width:1024px )" srcset="img/tshirtGrey270.png">
-                    <img src="./img/tshirtGrey.png" alt="remera gris">
-                </picture>
-                <picture class="foto7">
-                    <source media="(max-width:500px )" srcset="img/pantalonVerde150.jpg">
-                    <source media="(max-width:700px )" srcset="img/pantalonVerde210.jpg">
-                    <source media="(max-width:1024px )" srcset="img/pantalonVerde270.jpg">
-                    <img src="./img/pantalonVerde.jpg" alt="pantalon verde">
-                </picture>
-                <picture class="foto8">
-                    <source media="(max-width:500px )" srcset="img/root150.jpg">
-                    <source media="(max-width:700px )" srcset="img/root210.jpg">
-                    <source media="(max-width:1024px )" srcset="img/root270.jpg">
-                    <img src="./img/root.jpg" alt="root">
-                </picture>
-            </section>
-        </main>
+            <section class= "row justify-content-center">
+                <div class="card hover1 m-3" style="width: 18rem">
+                    <img src="/img/buzoRojoFrente455.jpg" class="card-img-top" alt="buzo rojo frente">
+                  </div>
+                  <div class="card hover2 m-3" style="width: 18rem;">
+                    <img src="./img/radio455.jpg" class="card-img-top" alt="radios">
+                  </div>
+                  <div class="card hover3 m-3" style="width: 18rem;">
+                    <img src="./img/tshirtGrey455.png" class="card-img-top" alt="remera gris">
+                  </div>
+                  <div class="card hover4 m-3" style="width: 18rem;">
+                    <img src="./img/tshirtEstampa455.png" class="card-img-top" alt="remera estampa">
+                  </div>
+                </section>
+                <section class= "row justify-content-center">
+                    <div class="card hover5 m-3" style="width: 18rem;">
+                        <img src="/img/root455.jpg" class="card-img-top" alt="root">
+                      </div>
+                      <div class="card hover6 m-3" style="width: 18rem;">
+                        <img src="./img/pantalonVerde455.jpg" class="card-img-top" alt="pantalon verde">
+                      </div>
+                      <div class="card hover7 m-3" style="width: 18rem;">
+                        <img src="./img/camperaVerde455.jpg" class="card-img-top" alt="campera verde">
+                      </div>
+                      <div class="card hover8 m-3" style="width: 18rem;">
+                        <img src="./img/chalecoNaranja455.jpg" class="card-img-top" alt="chaleco naranja">
+                      </div>
+                    </section>
+            </main>
+            
         <footer>   
-            <span class="titulof"> Suscribite a nuestro newsletter</span>
-            <span class="tiktok">Tik Tok</span> 
+            
+            <form class="titulof">
+                <h1>KEEP IN TOUCH</h1>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">e-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn">Subscribe</button>
+              </form>
+            
             <span class="facebook">Facebook</span>
             <span class="twitter">Twitter</span>
             <span class="insta">Instagram</span>
-            <span class="cookies">Configuración de cookies</span>
             <span class="politica">Politica de privacidad y cookies</span>
             <span class="compra">Condiciones de compra</span>
             <span class="boton">Botón de arrepentimiento</span>
             
         </footer>
-    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body> 
 </html>

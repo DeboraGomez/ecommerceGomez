@@ -1,13 +1,321 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap');
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: 'Montserrat', sans-serif;
 }
+
+nav{
+    border-bottom: 2px solid #121212;
+    margin-bottom: 10px;
+}
+.navbar-brand{
+    margin-right: -20rem;
+}
+nav ul li a:hover{
+    background-color: #FC6327;
+    border-radius: 5px;
+    font-weight: bold;
+}
+nav h5{
+    font-weight: bold;
+    font-size: 34px;
+}
+main{
+    padding-top: 200px;
+}
+
+.mBread{
+margin-left: 20px;
+}
+main div h1{
+    font-size: 90px;
+}
+main div h1 p{
+    padding: 20px;
+    margin-bottom: 90px;
+}
+main div p{
+    font-size: 60px;
+    text-align: right;
+}
+
+main div{
+    padding-left: 20px;
+} 
+.center{
+    padding: 50px;
+    text-align: center;
+}
+video {
+    width: 100%;
+    padding-bottom: 90px;
+}
+main section{
+padding-bottom: 50px;
+}
+section li a{
+        color: #ff4400;
+        text-decoration: none;
+    
+}
+
+.card{
+    border: none;
+    position: relative;
+}
+.card img{
+    border-radius: 20px 0 20px 0;
+}
+.hover1{
+    position: relative;
+}
+.hover1:hover:after{
+    content: "RED HOODIE";
+}
+.hover2:hover:after{
+    content: "VINTAGE RADIO";
+}
+.hover3:hover:after{
+    content: "GREY T-SHIRT";
+}
+.hover4:hover:after{
+    content: "T-SHIRT W";
+}
+.hover5:hover:after{
+    content: "ROOT";
+}
+.hover6:hover:after{
+    content: "VELVET PANTS";
+}
+.hover7:hover:after{
+    content: "GREEN JACKET";
+}
+.hover8:hover:after{
+    content: "VINTAGE JACKET";
+}
+.card:hover:after{
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    border-top: 2px solid #FC6327;
+    color:white;
+    width: 250px;
+    align-items: center;
+}
+
+footer {
+    display: grid;
+    grid-template-areas:
+    "titulof facebook twitter insta"
+    "titulof politica boton compra"
+    "titulof none none none";
+    font-size: 16px;
+    color: #121212;
+    background-color: white;
+    border-top: 2px solid black;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+footer form h1{
+    text-align: center;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.btn:hover{
+background-color: white;
+color: #121212;
+border: solid 1px #121212;
+}
+.buy{
+    background-color: white;
+    color: #121212;
+    border: solid 1px #121212;
+}
+.buy:hover{
+    background-color: #ff4400;
+    border: none;
+    color: white;
+}
+.titulof{
+    grid-area: titulof;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 40px;
+}
+.facebook{
+    grid-area: facebook;
+    text-align: center;
+    padding: 50px;
+}
+.twitter{
+    grid-area: twitter;
+    text-align: center;
+    padding: 50px;
+}
+.insta{
+    grid-area: insta;
+    text-align: center;
+    padding: 50px;
+}
+.pinte{
+    grid-area: pinte;
+    text-align: center;
+    padding: 10px;
+}
+.youtube{
+    grid-area: youtube;
+    text-align: center;
+    padding: 10px;
+}
+.cookies{
+    grid-area: cookies;
+    text-align: center;
+    padding: 10px;
+}
+.politica{
+    grid-area: politica;
+    text-align: center;
+    padding: 10px;
+}
+.compra{
+    grid-area: compra;
+    text-align: center;
+    padding: 10px;
+}
+.boton{
+    grid-area: boton;
+    text-align: center;
+    padding: 10px;
+}
+.navbar-toggler{
+    margin-right: 40px;
+}
+.form-control {
+    border: 1px solid #FC6327;
+}
+
+@media screen and (max-width: 500px) {
+    nav{
+        border-bottom: 1px solid #121212;
+        margin-bottom: 10px;
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    nav h5{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    nav li a {
+        font-size: 16px !important;
+    }
+    main div h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    main div h1 p{
+        margin-bottom: 40px;
+    }
+    main div p{
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    footer{
+        font-size: 12px;
+    }
+    .titulof{
+        font-size: 14px;
+    }
+    .tituloAyuda {
+        font-size: 18px;
+    }
+    .formulario{
+        font-size: 16px;
+    }
+    video{
+        width: 100%;
+        padding-bottom: 10px;
+        height: 500px;
+    }
+    footer {
+        display: grid;
+        grid-template-areas:
+        "titulof titulof titulof "
+        "titulof titulof titulof"
+        "facebook twitter insta"
+        "politica boton compra";
+        font-size: 14px;
+        color: #121212;
+        background-color: white;
+        border-top: 2px solid black;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    footer form h1{
+        text-align: center;
+    }
+    .twitter,
+    .insta,
+    .facebook {
+        padding: 10px;
+    }
+    
+}
+    @media screen and (max-width: 700px) {
+        
+        video{
+            width: 100%;
+            padding-bottom: 10px;
+            height: 500px;
+        }
+        footer {
+            display: grid;
+            grid-template-areas:
+            "titulof titulof titulof "
+            "titulof titulof titulof"
+            "facebook twitter insta"
+            "politica boton compra";
+            font-size: 16px;
+            color: #121212;
+            background-color: white;
+            border-top: 2px solid black;
+            padding-bottom: 0px;
+            padding-top: 20px;
+        }
+        footer form h1{
+            text-align: center;
+        }
+        .mb-3{
+            margin-bottom: 2rem !important;
+        }
+        .form-label {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+    }
+
+
+
+
+
+
+
+
+/*
 body {
     background-color: #1f212a;
 }
@@ -19,7 +327,7 @@ body {
     "footer";
 }
 
-/*********** header ***********/
+
 header {
     display: flex;
     align-items: center;
@@ -255,7 +563,7 @@ a:hover{
     top: 84%;
     left: 2%
 }
-/*********** main ***********/
+
 main {
     color: white;
 }
@@ -318,7 +626,7 @@ main section  picture img {
     font-weight: lighter;
 }
 
-/*********** footer ***********/
+
 footer {
     display: grid;
     grid-template-areas:
@@ -391,7 +699,7 @@ footer span {
     font-weight: lighter;
 }
 
-/*********** 500 px ***********/
+
 
 @media screen and (min-width: 500px) {
 header {
@@ -430,7 +738,7 @@ footer{
 }
 }
 
-/*********** 768 px ***********/
+
 @media screen and (min-width: 700px) {
     header{
         border-bottom: 3px solid #fff;
@@ -460,7 +768,7 @@ footer{
     }
 
 
-/*********** 1024 px ***********/
+
 @media screen and (min-width: 1024px) {
     header{
         border-bottom: 4px solid #fff;
@@ -491,4 +799,4 @@ footer{
         font-size: 18px;
     }
     
-}
+}/*

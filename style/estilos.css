@@ -29,6 +29,9 @@ main{
 .mBread{
 margin-left: 20px;
 }
+main ol a:hover{
+    color: #ff4400;
+}
 main div h1{
     font-size: 90px;
 }

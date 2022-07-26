@@ -206,7 +206,7 @@ border: solid 1px #121212;
     border: 1px solid #FC6327;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 545px) {
     nav{
         border-bottom: 1px solid #121212;
         margin-bottom: 10px;

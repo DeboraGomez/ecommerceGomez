@@ -1,0 +1,31 @@
+main{
+    a{
+        color: #ff4400;
+        text-decoration: none;
+    }
+    .mBread{
+        padding-top: 60px
+        
+    }
+    @include mphone{
+        .mBread{
+            padding-top: 120px;
+        }
+    }
+    
+    .btn {
+        @include btnBuy;
+    }
+    .buy:hover{
+        background-color: #ff4400;
+        border: none;
+        color: white;
+    }
+    div h5{
+        @include mphone{
+            font-size: 20px;
+        }
+    }
+    
+    }
+

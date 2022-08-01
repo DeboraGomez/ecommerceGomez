@@ -1,0 +1,34 @@
+nav{
+    font-family: $ff-main;
+    border-bottom: 2px solid #121212;
+    margin-bottom: 10px;
+    @include mphone{
+        border-bottom: 1px solid #121212;
+        margin-bottom: 10px;
+        
+    }
+    ul li a{
+        &:hover{
+            border-radius: 5px ;
+            font-weight: bold;
+            background-color: #FC6327;
+        }
+    }
+    .navbar-brand{
+        margin-right: -20rem;
+        
+    }
+    h5{
+        font-weight: bold;
+        font-size: 34px;
+        @include mphone{
+            font-size: 24px;
+        }
+    }
+    @include mphone{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    
+    }
+    

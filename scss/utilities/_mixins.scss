@@ -1,0 +1,16 @@
+@mixin fredes {
+    text-align: center;
+    padding: 50px;
+    font-weight: lighter;
+}
+@mixin fredes1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: lighter;
+}
+@mixin btnBuy {
+    background-color: white;
+    color: #121212;
+    border: solid 1px #121212;
+    }
+    

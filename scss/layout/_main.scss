@@ -1,0 +1,110 @@
+main{
+    font-family: $ff-main;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    @include mphone{
+        padding-top: 50px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+    .container-fluid{
+        @include mphone{
+            padding-top: 80px;
+        }
+    }
+    ol a {
+        &:hover{
+            color: #ff4400;
+        }
+    }
+    div h1{
+        font-size: 90px; 
+        p{
+            padding: 0px;
+            margin-bottom: 90px; 
+        }
+        @include mphone{
+            font-size: 40px;
+            font-weight: bold;
+            padding-bottom: 0px;
+            padding-top: 40px;
+            margin-top: 80px;
+        }
+    }
+    div p{
+        font-size: 60px;
+        text-align: right;
+        @include mphone{
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: end;
+            margin-top: 0px;
+        }
+    }
+    div{
+    padding-left: 20px;
+    }
+    .center{
+        padding: 50px;
+        text-align: center;
+    }
+    video{
+        width: 100%;
+        padding-bottom: 90px;
+        @include mphone{
+            width: 100%;
+            padding-bottom: 0px;
+            height: 360px;
+            padding-top: 0px;
+        }
+    }
+    .card{
+        border: none;
+        position: relative;
+        &:hover{
+            position: relative;                
+            &:after{
+                text-align: justify;
+                padding-left: 20px;
+                padding-top: 10px;
+                position: absolute;
+                top: 80%;
+                left: 6%;
+                border-top: 2px solid #FC6327;
+                color:white;
+                width: 250px;
+                align-items: center;
+            }
+        }
+        img{
+            border-radius: 20px 0 20px 0;
+            position: relative;
+        }
+    }  
+    .hover1:hover:after{
+        content: "RED HOODIE";
+    }
+    .hover2:hover:after{
+        content: "VINTAGE RADIO";
+    }
+    .hover3:hover:after{
+        content: "GREY T-SHIRT";
+    }
+    .hover4:hover:after{
+        content: "T-SHIRT W";
+    }
+    .hover5:hover:after{
+        content: "ROOT";
+    }
+    .hover6:hover:after{
+        content: "VELVET PANTS";
+    }
+    .hover7:hover:after{
+        content: "GREEN JACKET";
+    }
+    .hover8:hover:after{
+        content: "VINTAGE JACKET";
+    }
+    
+}

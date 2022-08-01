@@ -1,0 +1,140 @@
+footer {
+    font-family: $ff-main;
+    display: grid;
+    grid-template-areas:
+    "titulof facebook twitter insta"
+    "titulof politica boton compra"
+    "titulof none none none";
+    font-size: 16px;
+    color: #121212;
+    background-color: white;
+    border-top: 2px solid black;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    @include mphone{
+        font-size: 12px;
+        display: grid;
+        grid-template-areas:
+        "titulof titulof titulof "
+        "titulof titulof titulof"
+        "facebook twitter insta"
+        "politica boton compra";
+        font-size: 14px;
+        color: #121212;
+        background-color: white;
+        border-top: 2px solid black;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    @include tablet{
+        display: grid;
+        grid-template-areas:
+        "titulof titulof titulof "
+        "titulof titulof titulof"
+        "facebook twitter insta"
+        "politica boton compra";
+        font-size: 16px;
+        color: #121212;
+        background-color: white;
+        border-top: 2px solid black;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+        h1{
+            text-align: center;
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            border: none;
+            &:hover{
+                background-color: white;
+                color: #121212;
+                border: solid 1px #121212;
+                }
+        }
+        .titulof{
+            grid-area: titulof;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 40px;
+            @include mphone{
+                font-size: 14px;
+            }
+        }
+        .facebook{
+            grid-area: facebook;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+        .twitter{
+            grid-area: twitter;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+        .insta{
+            grid-area: insta;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+        .pinte{
+            grid-area: pinte;
+            text-align: center;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+
+        .youtube{
+            grid-area: youtube;
+            text-align: center;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+        .cookies{
+            grid-area: cookies;
+            text-align: center;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+        .politica{
+            grid-area: politica;
+            text-align: center;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+        .compra{
+            grid-area: compra;
+            text-align: center;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+        .boton{
+            grid-area: boton;
+            text-align: center;
+            @include fredes;
+            @include mphone{
+                padding: 10px;
+            }
+        }
+        .form-control {
+            border: 1px solid #FC6327;
+        }
+        
+    }

@@ -34,6 +34,8 @@ main{
     div p{
         font-size: 60px;
         text-align: right;
+        background-color: #ff4400;
+            color: white;
         @include mphone{
             margin-bottom: 10px;
             font-size: 24px;

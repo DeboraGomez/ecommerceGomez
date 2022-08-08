@@ -57,7 +57,9 @@ main {
         margin-top: 80px; } }
   main div p {
     font-size: 60px;
-    text-align: right; }
+    text-align: right;
+    background-color: #ff4400;
+    color: white; }
     @media screen and (max-width: 545px) {
       main div p {
         margin-bottom: 10px;
@@ -144,12 +146,61 @@ main h1 {
   padding-left: 40px;
   padding-top: 30px; }
 
-main form {
-  padding-left: 50px;
-  padding-top: 50px; }
+main .tituloHelp {
+  background-color: #C4C4C4;
+  font-size: medium;
+  color: white;
+  text-align: center; }
 
-main .titulo {
-  margin-top: 60px; }
+main .tituloHelp {
+  font-size: 34px;
+  padding: 10px; }
+  @media screen and (max-width: 545px) {
+    main .tituloHelp {
+      margin-top: 50px;
+      font-size: 24px; } }
+
+@media screen and (max-width: 545px) {
+  main .tituloAyuda {
+    font-size: 20px;
+    padding: 10px; } }
+
+main form {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 150px; }
+  main form div label {
+    color: #ff4400; }
+  main form div .form-check-label {
+    color: #121212; }
+  main form div .form-control {
+    border-radius: 5px;
+    background-color: #E6E6E6; }
+  main form div .form-check-input {
+    border-color: #ff4400; }
+    main form div .form-check-input:checked {
+      background-color: #ff4400;
+      border-color: #ff4400; }
+
+main h5 {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 20px; }
+
+main .accordion {
+  padding-right: 20px; }
+
+main .accordion-body {
+  font-weight: lighter;
+  color: #121212; }
+
+main .accordion-button {
+  background-color: transparent !important;
+  color: black !important; }
+  main .accordion-button:focus {
+    border-color: white !important;
+    box-shadow: none !important; }
 
 main h1 {
   font-size: 44px;

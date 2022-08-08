@@ -1,9 +1,74 @@
+%boxcolor{
+    background-color: #C4C4C4;
+    font-size: medium;
+    color: white;
+    text-align: center
+}
 main{
-    form{
-        padding-left: 50px;
-        padding-top: 50px;
+    .tituloHelp{
+        @extend %boxcolor;
+        font-size: 34px;
+        padding: 10px;
+        @include mphone{
+            margin-top: 50px;
+            font-size: 24px;
+        }
     }
-    .titulo{
-        margin-top: 60px;
+    .tituloAyuda{
+        @include mphone{
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+    form{
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 150px;
+        div{
+            label{
+                color: #ff4400;
+            }
+            .form-check-label{
+                color: #121212;
+            }
+            .form-control{
+                border-radius: 5px;
+                background-color: #E6E6E6;
+            }
+            .form-check-input{
+                border-color: #ff4400;
+                &:checked{
+                    background-color: #ff4400;
+                    border-color: #ff4400;
+                }
+                
+            }
+        }
+    }
+    h5{
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .accordion{
+        padding-right: 20px;
+    }
+    .accordion-body{
+        font-weight: lighter;
+        color: #121212;
+    }
+    
+    .accordion-button {
+        background-color: transparent !important;
+        color: black !important;
+
+        &:focus {
+            border-color: white !important;
+            box-shadow: none !important;
+        }
     }
 }
+    
+    
+

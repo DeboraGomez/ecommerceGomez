@@ -16,16 +16,19 @@ main{
     .btn {
         @include btnBuy;
     }
-    .buy:hover{
-        background-color: #ff4400;
-        border: none;
-        color: white;
-    }
-    div h5{
-        @include mphone{
-            font-size: 20px;
+    .buy {
+        &:hover{
+            background-color: #ff4400;
+            border: none;
+            color: white;
         }
     }
-    
+    div {
+        h5 {
+            @include mphone{
+                font-size: 20px;
+            }
+        }
     }
+}
 

@@ -12,39 +12,45 @@ main{
             padding-top: 80px;
         }
     }
-    ol a {
-        &:hover{
-            color: #ff4400;
+    ol {
+        a {
+            &:hover{
+                color: #ff4400;
+            }
         }
     }
-    div h1{
-        font-size: 90px; 
-        p{
-            padding: 0px;
-            margin-bottom: 90px; 
-        }
-        @include mphone{
-            font-size: 40px;
-            font-weight: bold;
-            padding-bottom: 0px;
-            padding-top: 40px;
-            margin-top: 80px;
-        }
-    }
-    div p{
-        font-size: 60px;
-        text-align: right;
-        background-color: #ff4400;
-            color: white;
-        @include mphone{
-            margin-bottom: 10px;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: end;
-            margin-top: 0px;
+    div {
+        h1{
+            font-size: 90px; 
+            p{
+                padding: 0px;
+                margin-bottom: 90px; 
+            }
+            @include mphone{
+                font-size: 40px;
+                font-weight: bold;
+                padding-bottom: 0px;
+                padding-top: 40px;
+                margin-top: 80px;
+            }
         }
     }
-    div{
+    div {
+        p {
+            font-size: 60px;
+            text-align: right;
+            background-color: #ff4400;
+                color: white;
+            @include mphone{
+                margin-bottom: 10px;
+                font-size: 24px;
+                font-weight: bold;
+                text-align: end;
+                margin-top: 0px;
+            }
+        }
+    }
+    div {
     padding-left: 20px;
     }
     .center{
@@ -84,29 +90,60 @@ main{
             position: relative;
         }
     }  
-    .hover1:hover:after{
-        content: "RED HOODIE";
+    .hover1 {
+        &:hover{
+            &:after{
+                content: "RED HOODIE";
+            }
+        }
     }
-    .hover2:hover:after{
-        content: "VINTAGE RADIO";
+    .hover2 {
+        &:hover{
+            &:after{
+                content: "VINTAGE RADIO";
+            }
+        }
     }
-    .hover3:hover:after{
-        content: "GREY T-SHIRT";
+    .hover3 {
+        &:hover{
+            &:after{
+                content: "GREY T-SHIRT";
+            }
+        }
     }
-    .hover4:hover:after{
-        content: "T-SHIRT W";
+    .hover4 {
+        &:hover{
+            &:after{
+                content: "T-SHIRT W";
+            }
+        }
     }
-    .hover5:hover:after{
-        content: "ROOT";
+    .hover5 {
+        &:hover{
+            &:after{
+                content: "ROOT";
+            }
+        }
     }
-    .hover6:hover:after{
-        content: "VELVET PANTS";
+    .hover6 {
+        &:hover{
+            &:after{
+                content: "VELVET PANTS";
+            }
+        }
     }
-    .hover7:hover:after{
-        content: "GREEN JACKET";
+    .hover7 {
+        &:hover{
+            &:after{
+                content: "GREEN JACKET";
+            }
+        }
     }
-    .hover8:hover:after{
-        content: "VINTAGE JACKET";
+    .hover8 {
+        &:hover{
+            &:after{
+                content: "VINTAGE JACKET";
+            }
+        }
     }
-    
 }

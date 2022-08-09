@@ -7,11 +7,15 @@ nav{
         margin-bottom: 10px;
         
     }
-    ul li a{
-        &:hover{
-            border-radius: 5px ;
-            font-weight: bold;
-            background-color: #FC6327;
+    ul {
+        li {
+            a {
+                &:hover{
+                    border-radius: 5px ;
+                    font-weight: bold;
+                    background-color: #FC6327;
+                }
+            }
         }
     }
     .navbar-brand{

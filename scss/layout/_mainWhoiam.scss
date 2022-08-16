@@ -15,6 +15,7 @@ main{
             grid-template-columns: 1fr;
         }
         .perfilImage{
+            text-align: center;
             img{
                 @include mphone{
                     width: 300px;

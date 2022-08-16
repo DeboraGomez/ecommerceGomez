@@ -256,10 +256,12 @@ main .tituloHelp {
       margin-top: 50px;
       font-size: 24px; } }
 
-@media screen and (max-width: 545px) {
-  main .tituloAyuda {
-    font-size: 20px;
-    padding: 10px; } }
+main .tituloAyuda {
+  margin-left: 20px; }
+  @media screen and (max-width: 545px) {
+    main .tituloAyuda {
+      font-size: 20px;
+      padding: 10px; } }
 
 main form {
   padding-top: 60px;
@@ -351,14 +353,16 @@ main .grillaWho {
     main .grillaWho {
       display: grid;
       grid-template-columns: 1fr; } }
-  @media screen and (max-width: 545px) {
-    main .grillaWho .perfilImage img {
-      width: 300px;
-      align-items: center; } }
-  @media screen and (max-width: 700px) {
-    main .grillaWho .perfilImage img {
-      width: 300px;
-      padding-bottom: 20px; } }
+  main .grillaWho .perfilImage {
+    text-align: center; }
+    @media screen and (max-width: 545px) {
+      main .grillaWho .perfilImage img {
+        width: 300px;
+        align-items: center; } }
+    @media screen and (max-width: 700px) {
+      main .grillaWho .perfilImage img {
+        width: 300px;
+        padding-bottom: 20px; } }
   main .grillaWho div .saludo {
     background-color: #c4c4c4;
     color: white;

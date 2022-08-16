@@ -1,6 +1,112 @@
 main{
-    h1{
-        padding-left: 40px;
-        padding-top: 30px;
+    font-family: $ff-main;
+    color: #121212;
+    .mBread{
+        @include mphone{
+            padding: 5%;
+            margin-top: 80px;
+            
+        }
     }
+    .grillaBag {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include mphone {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0%;
+        }
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        h2{
+            padding-top: 40px;
+            padding-bottom: 80px;
+            padding-left: 20px;
+            @include mphone{
+                padding-bottom: 30px;
+            }
+        }
+        
+        h4{
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+        .bag {
+            background-color: #F2F2F2;
+            border-left: 1px solid #121212;
+            @include mphone{
+                border-left: 0ch;
+                background-color: white;
+                border-top: 1px solid #121212;
+            }
+            @include tablet{
+                border-left: 0ch;
+                background-color: white;
+                border-top: 1px solid #121212;
+            }
+            & > div {
+                display: flex;
+                
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .iconTrash {
+                        width: 24px;
+                    }
+                    .dropdown{
+                        padding: 0px;
+                    }
+                    .btn{
+                        width: 70px;
+                        &:hover{
+                            background-color: black;
+                            border-color: none;
+                        }
+                        
+                    }
+                    .quantity{
+                        padding: 0px;
+                        width: 60px;
+                    }
+                    h6{
+                        font-weight: lighter;
+                    }
+                }
+            }
+            .total {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-right: 32px;
+                padding-top: 80px;
+                p{
+                    font-size: 20px;
+                    font-weight: lighter;
+                    background-color: transparent;
+                    color: #707070;
+                    padding: 10px;
+                    margin: 0%;
+                    @include mphone{
+                        font-size: 16px;
+                    }
+                    
+                }
+                H4{
+                    padding: 10px;
+                    margin: 0px;
+                    margin-bottom: 40px;
+                }
+                .styled{
+                    @include btnPrincipal;
+                    width: 240px;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+            }
+        }   
+    }
+    
 }

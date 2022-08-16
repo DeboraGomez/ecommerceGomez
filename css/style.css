@@ -31,7 +31,7 @@ nav {
 
 main {
   font-family: "Monserrat", sans-serif;
-  padding-top: 200px;
+  padding-top: 130px;
   padding-bottom: 100px; }
   @media screen and (max-width: 545px) {
     main {
@@ -101,11 +101,11 @@ main {
       border-radius: 20px 0 20px 0;
       position: relative; }
   main .hover1:hover:after {
-    content: "RED HOODIE"; }
+    content: "ROSE JACKET"; }
   main .hover2:hover:after {
-    content: "VINTAGE RADIO"; }
+    content: "VELVET SUIT"; }
   main .hover3:hover:after {
-    content: "GREY T-SHIRT"; }
+    content: "RAIN SUIT"; }
   main .hover4:hover:after {
     content: "T-SHIRT W"; }
   main .hover5:hover:after {
@@ -113,9 +113,9 @@ main {
   main .hover6:hover:after {
     content: "VELVET PANTS"; }
   main .hover7:hover:after {
-    content: "GREEN JACKET"; }
+    content: "MOLKO PANTS"; }
   main .hover8:hover:after {
-    content: "VINTAGE JACKET"; }
+    content: "ORANGE JACKET"; }
 
 main a {
   color: #ff4400;
@@ -127,6 +127,12 @@ main .mBread {
 @media screen and (max-width: 545px) {
   main .mBread {
     padding-top: 120px; } }
+
+main section div .card-body {
+  padding: 0%; }
+  main section div .card-body .card-title {
+    padding: 10px;
+    margin: 0%; }
 
 main .btn {
   background-color: white;
@@ -142,9 +148,99 @@ main .buy:hover {
   main div h5 {
     font-size: 20px; } }
 
-main h1 {
-  padding-left: 40px;
-  padding-top: 30px; }
+main {
+  font-family: "Monserrat", sans-serif;
+  color: #121212; }
+  @media screen and (max-width: 545px) {
+    main .mBread {
+      padding: 5%;
+      margin-top: 80px; } }
+  main .grillaBag {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    @media screen and (max-width: 545px) {
+      main .grillaBag {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0%; } }
+    @media screen and (max-width: 700px) {
+      main .grillaBag {
+        display: grid;
+        grid-template-columns: 1fr; } }
+    main .grillaBag h2 {
+      padding-top: 40px;
+      padding-bottom: 80px;
+      padding-left: 20px; }
+      @media screen and (max-width: 545px) {
+        main .grillaBag h2 {
+          padding-bottom: 30px; } }
+    main .grillaBag h4 {
+      padding-left: 20px;
+      padding-bottom: 40px; }
+    main .grillaBag .bag {
+      background-color: #F2F2F2;
+      border-left: 1px solid #121212; }
+      @media screen and (max-width: 545px) {
+        main .grillaBag .bag {
+          border-left: 0ch;
+          background-color: white;
+          border-top: 1px solid #121212; } }
+      @media screen and (max-width: 700px) {
+        main .grillaBag .bag {
+          border-left: 0ch;
+          background-color: white;
+          border-top: 1px solid #121212; } }
+      main .grillaBag .bag > div {
+        display: flex; }
+        main .grillaBag .bag > div div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          main .grillaBag .bag > div div .iconTrash {
+            width: 24px; }
+          main .grillaBag .bag > div div .dropdown {
+            padding: 0px; }
+          main .grillaBag .bag > div div .btn {
+            width: 70px; }
+            main .grillaBag .bag > div div .btn:hover {
+              background-color: black;
+              border-color: none; }
+          main .grillaBag .bag > div div .quantity {
+            padding: 0px;
+            width: 60px; }
+          main .grillaBag .bag > div div h6 {
+            font-weight: lighter; }
+      main .grillaBag .bag .total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 32px;
+        padding-top: 80px; }
+        main .grillaBag .bag .total p {
+          font-size: 20px;
+          font-weight: lighter;
+          background-color: transparent;
+          color: #707070;
+          padding: 10px;
+          margin: 0%; }
+          @media screen and (max-width: 545px) {
+            main .grillaBag .bag .total p {
+              font-size: 16px; } }
+        main .grillaBag .bag .total H4 {
+          padding: 10px;
+          margin: 0px;
+          margin-bottom: 40px; }
+        main .grillaBag .bag .total .styled {
+          background-color: black;
+          color: white;
+          border: none;
+          width: 240px;
+          height: 40px;
+          border-radius: 5px; }
+          main .grillaBag .bag .total .styled:hover {
+            background-color: white;
+            color: #121212;
+            border: solid 1px #121212; }
 
 main .tituloHelp {
   background-color: #C4C4C4;
@@ -182,6 +278,14 @@ main form {
     main form div .form-check-input:checked {
       background-color: #ff4400;
       border-color: #ff4400; }
+  main form div .btn {
+    background-color: black;
+    color: white;
+    border: none; }
+    main form div .btn:hover {
+      background-color: white;
+      color: #121212;
+      border: solid 1px #121212; }
 
 main h5 {
   padding-top: 40px;
@@ -202,19 +306,70 @@ main .accordion-button {
     border-color: white !important;
     box-shadow: none !important; }
 
-main h1 {
-  font-size: 44px;
-  padding-bottom: 40px; }
+main .mBread {
+  padding-bottom: 20px; }
 
-main h3 {
-  font-size: 34px;
-  padding-bottom: 40px; }
+main .grillaSusta {
+  padding: 0%; }
 
-main p {
-  font-size: 28px;
-  text-align: center;
-  font-weight: lighter;
-  padding-top: 10px; }
+main .center {
+  padding: 10px; }
+  @media screen and (max-width: 545px) {
+    main .center {
+      padding-right: 20px; } }
+  main .center h1 {
+    font-size: 48px; }
+    @media screen and (max-width: 545px) {
+      main .center h1 {
+        font-size: 34px;
+        font-weight: 400;
+        margin-top: 0%;
+        padding-top: 0%; } }
+  main .center p {
+    background-color: transparent;
+    color: #121212;
+    font-size: 24px;
+    text-align: center; }
+    @media screen and (max-width: 545px) {
+      main .center p {
+        font-size: 24px;
+        font-weight: 200;
+        padding: 10px; } }
+
+main .mBread {
+  padding-bottom: 80px; }
+
+main .grillaWho {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  @media screen and (max-width: 545px) {
+    main .grillaWho {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 0%; } }
+  @media screen and (max-width: 700px) {
+    main .grillaWho {
+      display: grid;
+      grid-template-columns: 1fr; } }
+  @media screen and (max-width: 545px) {
+    main .grillaWho .perfilImage img {
+      width: 300px;
+      align-items: center; } }
+  @media screen and (max-width: 700px) {
+    main .grillaWho .perfilImage img {
+      width: 300px;
+      padding-bottom: 20px; } }
+  main .grillaWho div .saludo {
+    background-color: #c4c4c4;
+    color: white;
+    padding: 20px; }
+  main .grillaWho div h4 {
+    padding: 20px; }
+  main .grillaWho div div a {
+    padding-right: 8px; }
+  @media screen and (max-width: 545px) {
+    main .grillaWho div {
+      padding: 5px; } }
 
 footer {
   font-family: "Monserrat", sans-serif;

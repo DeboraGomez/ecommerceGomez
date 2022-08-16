@@ -1,16 +1,36 @@
 main{
-    h1{
-        font-size: 44px;
-        padding-bottom: 40px;
+    .mBread{
+        padding-bottom: 20px;
     }
-    h3{
-        font-size: 34px;
-        padding-bottom: 40px;
+    .grillaSusta{
+        padding: 0%;
     }
-    p{
-        font-size: 28px;
-        text-align: center;
-        font-weight: lighter;
-        padding-top: 10px;
+    .center{
+        padding: 10px;
+        @include mphone{
+            padding-right: 20px;
+        }
+        h1{
+            font-size: 48px;
+            @include mphone{
+                font-size: 34px;
+                font-weight: 400;
+                margin-top: 0%;
+                padding-top: 0%;
+            }
+
+        }
+        p{
+            background-color: transparent;
+            color: #121212;
+            font-size: 24px;
+            text-align: center;
+            @include mphone{
+                font-size: 24px;
+                font-weight: 200;
+                padding: 10px;
+            }
+            
+        }
     }
 }

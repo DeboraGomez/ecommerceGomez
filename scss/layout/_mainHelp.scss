@@ -44,6 +44,9 @@ main{
                 }
                 
             }
+            .btn{
+                @include btnPrincipal;
+            }
         }
     }
     h5{

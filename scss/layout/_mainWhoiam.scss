@@ -1,0 +1,50 @@
+main{
+    .mBread{
+        padding-bottom: 80px;
+    }
+    .grillaWho{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include mphone{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0%;
+        }
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .perfilImage{
+            img{
+                @include mphone{
+                    width: 300px;
+                    align-items: center ;
+                }
+                @include tablet{
+                    width: 300px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+        div{
+            .saludo{
+                background-color: #c4c4c4;
+                color: white;
+                padding: 20px;
+                
+            }
+            h4{
+                padding: 20px;
+
+            }
+            div{
+                a{
+                padding-right: 8px;
+                }
+            }
+            @include mphone{
+                padding: 5px;
+            }
+            }
+    }
+}

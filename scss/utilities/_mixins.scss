@@ -12,5 +12,16 @@
     background-color: white;
     color: #121212;
     border: solid 1px #121212;
+}
+@mixin btnPrincipal {
+    background-color: black;
+    color: white;
+    border: none;
+    &:hover{
+        background-color: white;
+        color: #121212;
+        border: solid 1px #121212;
     }
+    
+}
 
